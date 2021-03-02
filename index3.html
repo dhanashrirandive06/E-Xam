@@ -12,8 +12,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style3.css">
+    <!-- <link rel="stylesheet" href="style.sass"> -->
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -32,38 +37,37 @@
 
             <div class="sidebar-header">
                
-                    <a href="#" class="h4"> <i class="fa fa-list" aria-hidden="true"></i> Dashboard</a>
+                    <a href="#" class="h5"><i class="fa fa-columns mx-3 text-primary"></i> Dashboard</a>
             </div>
 
             <ul class="list-unstyled components">
-                <p>Dummy Heading</p>
                 <li class="active">
-                   
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">  <i class="fas fa-home"></i> Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
+                    <a href="#homeSubmenu"  aria-expanded="false">  <i class="fas fa-home mx-2"></i> Classes</a>
+                </li>
+                <li class="border-bottom pb-3" >
+                    <a href="#homeSubmenu"  aria-expanded="false">  <i class="fa fa-calendar mx-2" aria-hidden="true"></i> Calendar</a>
+                </li>
+                 
+                <p >Enrolled</p>
+
+                <li>
+                    <a href="#"><i class="fa fa-list mx-3" aria-hidden="true"></i> To Do</a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fas fa-2x fa-check-circle mx-3 text-primary"></i> Blockchain Technology</a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fas fa-2x fa-check-circle mx-3 text-warning"></i> Software Engineering</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-address-card"></i> About</a>
+                    <a href="#"><i class="fas fa-2x fa-check-circle mx-3 text-danger"></i> Compiler Design </a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-user"></i> Portfolio</a>
+                    <a href="#"><i class="fas fa-2x fa-check-circle mx-3 text-success"></i> Distributed System</a>
                 </li>
-                <li>
-                    <a href="#"><i class="fas fa-tasks"></i> Services</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fas fa-phone"></i> Contact</a>
-                </li>
+                
             </ul>
 
         </nav>
@@ -87,13 +91,13 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item  mx-2">
-                                <a class="nav-link" href="#"><i class="fa fa-2x fa-search"></i> <span class="d-lg-none">Search</span></a>
+                                <a class="nav-link" href="#"><i class="fa fa-lg fa-search my-1"></i> <span class="d-lg-none">Search</span></a>
                             </li>
                             <li class="nav-item mx-2">
-                                <a class="nav-link" href="#"><i class="fa fa-2x fa-sm fa-th" aria-hidden="true"></i> <span class="d-lg-none">More</span></a>
+                                <a class="nav-link" href="#"><i class="fa  fa-lg fa-th my-1" aria-hidden="true"></i> <span class="d-lg-none">More</span></a>
                             </li>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="#"><i class="fa  fa-2x  fa-user-circle" aria-hidden="true"></i> <span class="d-lg-none">Dhanashri</span></a>
+                            <li class="nav-item mx-lg-2 ">
+                                <a class="nav-link" href="#"><i class="fa  fa-2x  fa-user-circle text-danger" aria-hidden="true"></i> <span class="d-lg-none">Dhanashri</span></a>
                             </li>
                         </ul>
                     </div>
