@@ -43,7 +43,7 @@ a{
   height: var(--header-height);
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,6 +57,7 @@ a{
   color: var(--first-color);
   font-size: 1.5rem;
   cursor: pointer;
+  
 }
 
 .header__img{
@@ -80,12 +81,12 @@ a{
   width: var(--nav-width);
   height: 95vh;
   background-color: var(--first-color);
-  padding: .5rem 1rem 0 0;
+  padding: .5rem 0rem 0 0;
   transition: .5s;
   z-index: var(--z-fixed);
   border-radius: 1rem;
   margin-left: 5px;
-  box-shadow: 5px 7px 15px 2px #a899e4;
+  box-shadow: 0px 0px 15px 0px #a899e4;
 }
 
 .nav{
@@ -140,6 +141,7 @@ a{
   left: 0;
 }
 
+
 /*Add padding body movil*/
 .body-pd{
   padding-left: calc(var(--nav-width) + 1rem);
@@ -153,7 +155,7 @@ a{
   border-bottom-left-radius: 1rem;
   border-top-left-radius: 1rem;
   box-shadow: inset -6px 20px 14px -8px rgb(200 199 212);
-  
+ 
 }
 
 /* 
