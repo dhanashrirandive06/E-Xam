@@ -176,6 +176,10 @@ a{
   }
   
 }
+.card{
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+}
 .card:hover{
   box-shadow: 9px 6px 15px 10px #dbdbe0;
 }
