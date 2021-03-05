@@ -174,4 +174,8 @@ a{
   .body-pd{
     padding-left: calc(var(--nav-width) + 53px);
   }
+  
+}
+.card:hover{
+  box-shadow: 9px 6px 15px 10px #dbdbe0;
 }
