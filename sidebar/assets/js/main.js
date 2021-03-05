@@ -8,7 +8,7 @@ const showNavbar = (toggleId, navId, bodyId, headerId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId),
     bodypd = document.getElementById(bodyId),
-    headerpd = document.getElementById(headerId)
+    headerpd = document.getElementsByClassName(headerId)
     lnav = document.getElementById('nav-bar')
     // Validate that all variables exist
     if(toggle && nav && bodypd && headerpd){
@@ -25,33 +25,33 @@ const showNavbar = (toggleId, navId, bodyId, headerId) =>{
 
 
        //Hover on header
-       lnav.addEventListener('mouseenter', ()=>{
-        // show navbar
-        nav.classList.toggle('show')
-        // change icon
-        toggle.classList.toggle('bx-x')
-        // add padding to body
-        bodypd.classList.toggle('body-pd')
-        // add padding to header
-        headerpd.classList.toggle('body-pd')
-    })
+    //    lnav.addEventListener('mouseenter', ()=>{
+    //     // show navbar
+    //     nav.classList.toggle('show')
+    //     // change icon
+    //     toggle.classList.toggle('bx-x')
+    //     // add padding to body
+    //     bodypd.classList.toggle('body-pd')
+    //     // add padding to header
+    //     headerpd.classList.toggle('body-pd')
+    // })
 
 
-    lnav.addEventListener('mouseleave', ()=>{
-        // show navbar
-        nav.classList.remove('show')
-        // change icon
-        toggle.classList.remove('bx-x')
-        // add padding to body
-        bodypd.classList.remove('body-pd')
-        // add padding to header
-        headerpd.classList.remove('body-pd')
-    })
+    // lnav.addEventListener('mouseleave', ()=>{
+    //     // show navbar
+    //     nav.classList.remove('show')
+    //     // change icon
+    //     toggle.classList.remove('bx-x')
+    //     // add padding to body
+    //     bodypd.classList.remove('body-pd')
+    //     // add padding to header
+    //     headerpd.classList.remove('body-pd')
+    // })
 
     }
 }
 
-showNavbar('header-toggle','nav-bar','body-pd','header')
+showNavbar('header-toggle','nav-bar','body-pd','navbar')
 
 /*===== LINK sideActive  =====*/ 
 const linkColor = document.querySelectorAll('.nav__link')
