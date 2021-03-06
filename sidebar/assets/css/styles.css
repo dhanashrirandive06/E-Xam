@@ -179,7 +179,7 @@ a{
   margin-bottom: 3rem;
 }
 .card-img, .card-img-top{
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0rem 0rem;
 
 }
 .card, img
@@ -188,9 +188,8 @@ a{
   /* height: 10rem; */
 }
 .card-img, .card-img-bottom, .card-img-top{
-  height: 60%;
-  width: 85%;
   margin: -2rem auto;
+  height: 12rem;
 }
 
 .card-body{
