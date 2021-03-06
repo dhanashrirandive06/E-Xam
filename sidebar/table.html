@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== BOX ICONS ===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Table responsive</title>
+  </head>
+  <body id="body-pd">
+    <nav class="navbar navbar-expand-lg navbar-light rounded shadow">
+      <div class="container-fluid">
+        <header class="header d-lg-none d-block" id="header">
+          <div class="header__mb">
+            <i class="bx bx-menu" id="header-mb"></i>
+          </div>
+        </header>
+
+        <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-align-justify"></i>
+                </button> -->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="bx bx-search bx-md"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="bx bxs-bell bx-md bx-tada"></i
+              ></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                ><span class="text-secondary">Admin</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa fa-2x fa-user-circle-o" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link text-secondary" href="#"
+            ><i class="fa fa-2x fa-user-circle-o" aria-hidden="true"></i
+          ></a>
+        </li>
+      </div>
+    </nav>
+
+    <div class="l-navbar" id="nav-bar">
+      <nav class="nav">
+        <header class="header d-md-block d-none" id="header">
+          <div class="header__toggle">
+            <i class="bx bx-menu" id="header-toggle"></i>
+          </div>
+        </header>
+
+        <div>
+          <a href="#" class="nav__logo">
+            <i class="bx bx-layer nav__logo-icon"></i>
+            <span class="nav__logo-name">Bedimcode</span>
+          </a>
+
+          <div class="nav__list">
+            <a href="#" class="nav__link sideActive">
+              <i class="bx bx-grid-alt nav__icon"></i>
+              <span class="nav__name">Dashboard</span>
+            </a>
+
+            <a href="#" class="nav__link">
+              <i class="bx bx-user nav__icon"></i>
+              <span class="nav__name">Users</span>
+            </a>
+
+            <a href="#" class="nav__link">
+              <i class="bx bx-message-square-detail nav__icon"></i>
+              <span class="nav__name">Messages</span>
+            </a>
+
+            <a href="#" class="nav__link">
+              <i class="bx bx-bookmark nav__icon"></i>
+              <span class="nav__name">Favorites</span>
+            </a>
+
+            <a href="#" class="nav__link">
+              <i class="bx bx-folder nav__icon"></i>
+              <span class="nav__name">Data</span>
+            </a>
+
+            <a href="#" class="nav__link">
+              <i class="bx bx-bar-chart-alt-2 nav__icon"></i>
+              <span class="nav__name">Analytics</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div
+      class="jumbotron rounded text-light"
+      style="
+        background-image: url(assets/img/table.jpg);
+        background-size: cover;
+        height: 20rem;
+        margin-bottom: -5rem;
+      "
+    >
+      <div class="container">
+        <h1 class="display-4">Fluid jumbotron</h1>
+        <p class="lead">
+          This is a modified jumbotron that occupies the entire horizontal space
+          of its parent.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col my-2">
+        <div class="card tCards mx-auto">
+          <div class="card-body row p-4">
+            <div class="col-3 align-self-center">
+              <a href="/"><i class="bx bxs-bell bx-md"></i></a>
+            </div>
+            <div class="col">
+              <h5 class="card-title text text-secondary">Heading</h5>
+              <p class="card-text">With supporting text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col my-2">
+        <div class="card tCards mx-auto">
+          <div class="card-body row p-4">
+            <div class="col-3 align-self-center">
+              <a href="/"><i class="bx bxs-message-rounded bx-md"></i></a>
+            </div>
+            <div class="col">
+              <h5 class="card-title text text-secondary">Heading</h5>
+              <p class="card-text">With supporting text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col my-2">
+        <div class="card tCards mx-auto">
+          <div class="card-body row p-4">
+            <div class="col-3 align-self-center">
+              <a href="/"><i class="bx bxs-cloud-upload bx-md"></i></a>
+            </div>
+            <div class="col">
+              <h5 class="card-title text text-secondary">Heading</h5>
+              <p class="card-text">With supporting text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col my-2">
+        <div class="card tCards mx-auto">
+          <div class="card-body row p-4">
+            <div class="col-3 align-self-center">
+              <a href="/"><i class="bx bxs-book-bookmark bx-md"></i></a>
+            </div>
+            <div class="col">
+              <h5 class="card-title text text-secondary">Heading</h5>
+              <p class="card-text">With supporting text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8 col">
+        <table class="table table-striped">
+          <thead class="shadow-sm">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="shadow-sm table-light">
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr class="shadow-sm table-secondary">
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr class="shadow-sm table-light">
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+            <tr class="shadow-sm table-secondary">
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+            <tr class="shadow-sm table-light">
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+            <tr class="shadow-sm table-secondary">
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-lg-3 col ">
+        <div class="card listCard mx-auto" style="width: 18rem;">
+            <div class="card-header" style="background-image: url(https://image.freepik.com/free-vector/colourful-gradient-liquid-shapes-background_52683-22477.jpg);background-size: cover;height: 5rem; border-radius: 1rem 1rem 0rem 0rem">
+              
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio <i class="bx bxs-cloud-download bx-md float-right"></i></li>
+              <li class="list-group-item">Dapibus ac facilisis in <i class="bx bxs-cloud-download bx-md float-right"></i></li>
+              <li class="list-group-item">Vestibulum at eros <i class="bx bxs-cloud-download bx-md float-right"></i></li>
+              <li class="list-group-item">Vestibulum at eros <i class="bx bxs-cloud-download bx-md float-right"></i></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

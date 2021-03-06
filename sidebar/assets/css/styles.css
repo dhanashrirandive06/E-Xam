@@ -226,3 +226,41 @@ a{
 }
 
 
+/* =======Table.html===== */
+
+
+  /*====== Cards Css ====*/
+.tCards{
+  width: 18rem;
+   height: 8rem;
+   box-shadow: 0px 0px 3px 3px rgb(224 222 222);
+}
+
+
+/*====== Table css =====*/
+thead{
+  border-color: aliceblue;
+  border-radius: 2rem!important;
+}
+
+.table td, .table th{
+  padding: .75rem;
+  vertical-align: top;
+ border-top: 0px solid #dee2e6;
+}
+.table tbody tr{
+  padding: 2rem 0;
+}
+
+table, th, td {
+  background: #ffffff;
+  padding: 5px;
+}
+
+/* List Card Css */
+.listCard{
+    border-radius: 1rem;
+    border: 1px solid rgb(235, 235, 235);
+    box-shadow: 0px 0px 3px 1px rgb(224 222 222);
+    margin-top: 1rem;
+}
