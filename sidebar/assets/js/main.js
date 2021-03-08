@@ -24,6 +24,30 @@ const showNavbar = (toggleId, navId, bodyId, headerId,headerMb) =>{
             // add padding to header
             headerpd.classList.toggle('show')
         })
+
+        //    Hover on header
+       lnav.addEventListener('mouseenter', ()=>{
+        // show navbar
+        nav.classList.toggle('show')
+        // change icon
+        toggle.classList.toggle('bx-x')
+        // add padding to body
+        bodypd.classList.toggle('body-pd')
+        // add padding to header
+        headerpd.classList.toggle('body-pd')
+    })
+
+
+    // lnav.addEventListener('mouseleave', ()=>{
+    //     // show navbar
+    //     nav.classList.remove('show')
+    //     // change icon
+    //     toggle.classList.remove('bx-x')
+    //     // add padding to body
+    //     bodypd.classList.remove('body-pd')
+    //     // add padding to header
+    //     headerpd.classList.remove('body-pd')
+    // })
     }
 }
 
