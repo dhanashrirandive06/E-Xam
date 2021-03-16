@@ -8,16 +8,140 @@
 
 body,
 input {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
   position: relative;
-  width: 100%;
+  max-width: 100%!important;
   background-color: #fff;
   min-height: 100vh;
   overflow: hidden;
+  margin: 0rem;
+  padding: 0rem;
 }
+
+.navbar{
+  position: fixed!important;
+  z-index: 101;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  /* box-shadow:1px 1px 3px 3px #80808030; */
+}
+
+
+.nav-link{
+  padding:0.1rem 1rem!important;
+  margin: 0rem 0.5rem;
+  border-radius: 1rem;
+ color: #000;
+
+}
+
+.nav-link:hover{
+ color: blue;
+}
+
+
+.navbarRight{
+  color: White!important;
+  transition-property:color!important;
+  transition-duration: 3s!important;
+}
+
+.navbarLeft{
+color :Black!important;
+transition-property: color!important;
+transition-duration: 3s!important;
+}
+
+.navbarBrand{
+  color:white
+}
+
+.navbarBrandLeft{
+color:black;
+transition-property: color;
+transition-duration: 3s;
+}
+
+.navbarBrandRight{
+color:white;
+transition-property: color;
+transition-duration: 3s;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+@media (max-width: 767.98px) {
+
+  .navbarRight{
+    color: rgb(0, 0, 0)!important;
+    transition-property:color!important;
+    transition-duration: 3s!important;
+  }
+  
+  .navbarLeft{
+  color :Black!important;
+  transition-property: color!important;
+  transition-duration: 3s!important;
+  }
+  
+  .navbarBrand{
+    color:rgb(8, 8, 8)
+  }
+  
+  .navbarBrandLeft{
+  color:black;
+  transition-property: color;
+  transition-duration: 3s;
+  }
+  
+  .navbarBrandRight{
+  color:white;
+  transition-property: color;
+  transition-duration: 3s;
+  }
+  .mbNavbar{
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.btn:hover{
+  transform: translateY(-1px);
+box-shadow: 0 7px 14px rgb(50 50 93 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+.btn{
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+}
+
+/* Media Query for container */
+@media (min-width: 576px) and (max-width: 1399.98px) {
+.contianer{
+  max-width: 100%!important;
+}
+}
+
+@media (min-width: 1400px) {
+  .container{
+    max-width: 65%!important;
+    margin: 3rem 0;
+    box-shadow: 0px 0px 13px 11px #e0dcdc;
+  }
+  .navbar{
+    position: relative!important;
+  }
+  .nav-link{
+    color: black!important;
+  }
+  .nav-brand{
+    color: black;
+  }
+ }
 
 .forms-container {
   position: absolute;
@@ -69,14 +193,25 @@ form.sign-in-form {
 .input-field {
   max-width: 380px;
   width: 100%;
-  background-color: #f0f0f0;
   margin: 10px 0;
-  height: 55px;
-  border-radius: 55px;
+  /* height: 55px; */
+  border-radius: 10px;
   display: grid;
   grid-template-columns: 15% 85%;
   padding: 0 0.4rem;
   position: relative;
+  box-shadow:0px 0px 3px 1px #d8d8d8c2;
+  border: 1px solid #d8d8d8c2;
+
+}
+.input-field:hover{
+  box-shadow: 0px 4px 6px 1px #d4d4d4c2;
+  /* border: 0.1px solid #d4d4d4c2; */
+
+}
+
+.input-field:active{
+  box-shadow: 2px 4px 5px 1px #ccc6c6;
 }
 
 .input-field i {
@@ -99,7 +234,7 @@ form.sign-in-form {
 
 .input-field input::placeholder {
   color: #aaa;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .social-text {
@@ -132,7 +267,7 @@ form.sign-in-form {
   border-color: #4481eb;
 }
 
-.btn {
+/* .btn {
   width: 150px;
   background-color: #5995fd;
   border: none;
@@ -145,11 +280,11 @@ form.sign-in-form {
   margin: 10px 0;
   cursor: pointer;
   transition: 0.5s;
-}
+} */
 
-.btn:hover {
+/* .btn:hover {
   background-color: #4d84e2;
-}
+} */
 .panels-container {
   position: absolute;
   height: 100%;
@@ -160,7 +295,6 @@ form.sign-in-form {
   grid-template-columns: repeat(2, 1fr);
 }
 
-
 .container:before {
   content: "";
   position: absolute;
@@ -169,23 +303,11 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #4723D9 0%, #4723D9 100%);
-  /* background-image: url(assets/img/login.jpg); */
-  transition: 1.8s ease-in-out;
-  /* background-repeat: no-repeat;
-  background-size: cover; */
+  /* background-image: linear-gradient(-45deg, #4723D9 0%, #4723D9 100%); */
+  background-image: linear-gradient(to right, #4723d9, #3c1eb9, #32199a, #28147d, #1f0f60);  transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
 }
-
-@media (min-width: 870px) { 
-    .container:before {
- background-image: url(assets/img/login.jpg);
- background-repeat: no-repeat;
- background-size: cover;
-      }
-}
-
 
 .image {
   width: 100%;
@@ -229,7 +351,7 @@ form.sign-in-form {
   padding: 0.7rem 0;
 }
 
-.btn.transparent {
+/* .btn.transparent {
   margin: 0;
   background: none;
   border: 2px solid #fff;
@@ -237,7 +359,7 @@ form.sign-in-form {
   height: 41px;
   font-weight: 600;
   font-size: 0.8rem;
-}
+} */
 
 .right-panel .image,
 .right-panel .content {
@@ -342,11 +464,11 @@ form.sign-in-form {
     padding: 0.5rem 0;
   }
 
-  .btn.transparent {
+  /* .btn.transparent {
     width: 110px;
     height: 35px;
     font-size: 0.7rem;
-  }
+  } */
 
   .container:before {
     width: 1500px;
